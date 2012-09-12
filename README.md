@@ -7,4 +7,5 @@ You would expect that because everything is wrapped within try-catch that the me
 
 A dirty workaround is to call a method on the EJB that doesn't have transaction scope and that method then calls the method with transaction scope and your timer won't expunge if you really need the transaction scope on the EJB method because the container requires you to have that for what you are doing.
 
-I tested this on JBoss 7.1.1 Final aswell and the bug it didn't occurr there.
+I tested this on JBoss 7.1.1 Final aswell and the bug it didn't occurr there, but it did occurr on the latest version of GlassFish which is 3.1.2.2
+
