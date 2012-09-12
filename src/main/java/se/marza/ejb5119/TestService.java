@@ -13,7 +13,7 @@ import javax.ejb.TransactionAttributeType;
 public class TestService
 {
 	/**
-	 *
+	 * Throws RuntimeException within a transaction.
 	 */
 	@TransactionAttribute(TransactionAttributeType.REQUIRED)
 	public void throwsRuntimeExceptionWithinTransaction()
@@ -22,7 +22,7 @@ public class TestService
 	}
 
 	/**
-	 *
+	 * Throws RuntimeException without a transaction.
 	 */
 	@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
 	public void throwsRuntimeExceptionWithoutTransaction()

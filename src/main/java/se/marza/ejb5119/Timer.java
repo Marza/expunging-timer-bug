@@ -21,9 +21,9 @@ public class Timer
 	private TestService service;
 
 	/**
-	 *
+	 * This method will run twice and then expunge on GlassFish 3.1.1.
 	 */
-	@Schedule(second = "*/10", minute = "*", hour = "*", timezone = "UTC", persistent = false)
+	@Schedule(second = "*/10", minute = "*", hour = "*", persistent = false)
 	public void withinTransaction()
 	{
 		try
@@ -39,9 +39,9 @@ public class Timer
 	}
 
 	/**
-	 *
+	 * This method will run infinitely.
 	 */
-	@Schedule(second = "*/10", minute = "*", hour = "*", timezone = "UTC", persistent = false)
+	@Schedule(second = "*/10", minute = "*", hour = "*", persistent = false)
 	public void withoutTransaction()
 	{
 		try
