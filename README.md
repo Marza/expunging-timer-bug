@@ -8,6 +8,6 @@ You would expect that because everything is wrapped within try-catch that the me
 I tested this on JBoss 7.1.1 Final aswell and the bug didn't occurr there, but it did occurr on the latest version of GlassFish which is 3.1.2.2
 
 Solution
-===================
+-------------------
 
 The solution is to catch any unchecked exceptions within the transaction scoped method and re-throwing them as checked exceptions instead.
