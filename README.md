@@ -5,7 +5,7 @@ I experienced a wierd behaviour on GlassFish 3.1.1 where I have a Timer class an
 
 You would expect that because everything is wrapped within try-catch that the method on the timer won't fail but it does. Calling a method without transaction scope that throws a RuntimeException won't expunge the timer as expected.
 
-I tested this on JBoss 7.1.1 Final aswell and the bug didn't occurr there, but it did occurr on the latest version of GlassFish which is 3.1.2.2
+I tested this on JBoss 7.1.1 Final aswell and the bug didn't occurr there, but it did occur on the latest version of GlassFish which is 3.1.2.2
 
 Solution
 -------------------
