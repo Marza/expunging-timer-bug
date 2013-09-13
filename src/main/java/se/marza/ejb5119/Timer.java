@@ -10,7 +10,7 @@ import javax.ejb.TransactionAttributeType;
 /**
  * Timer.
  *
- * @author Tony Marjakangas | tony@fareoffice.com
+ * @author Tony Marjakangas | tony@marza.se
  */
 @Startup
 @Singleton
