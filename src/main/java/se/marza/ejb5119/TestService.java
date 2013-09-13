@@ -7,7 +7,7 @@ import javax.ejb.TransactionAttributeType;
 /**
  * Test service.
  *
- * @author Tony Marjakangas | tony@fareoffice.com
+ * @author Tony Marjakangas | tony@marza.se
  */
 @Stateless
 public class TestService
